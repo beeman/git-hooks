@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Source http://serverfault.com/a/281378
+[ "$1" != refs/heads/master ] || {
+    echo "ERROR: you are not allowed to update master" >&2
+    exit 1
+}
+
